@@ -9,14 +9,14 @@ public class Listar {
 	
 	public void exibirTodosOsVeiculos() {
 		
-		if(this.listaDeVeiculos.getVeiculos().isEmpty()) {
+		if(!this.listaDeVeiculos.getVeiculos().isEmpty()) {
 		
 			for(Veiculos veiculo : this.listaDeVeiculos.getVeiculos()) {
 				System.out.println(veiculo);
 			}
 			System.out.println("---------------------------------------------------------------");
 		}else
-			System.out.println("Lista vazia");
+			System.out.println("++++++++ LISTA VAZIA ++++++++");
 	}
 	
 }

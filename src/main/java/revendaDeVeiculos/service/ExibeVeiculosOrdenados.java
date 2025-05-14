@@ -17,13 +17,14 @@ public class ExibeVeiculosOrdenados {
 				
 				System.out.println((i+1) + " - " + listaDeVeiculos.getVeiculos().get(i));	
 			}
+			
 			System.out.print("-> ");
 			
 			Veiculos veiculoParaEdicao = listaDeVeiculos.getVeiculos().get(sc.nextInt()-1);
 			sc.nextLine();
 			return veiculoParaEdicao;
 		}else {
-			System.out.println("Lista de veiculos vazia");
+			System.out.println("+++++ LISTA DE VEICULOS FAZIA +++++");
 			return null;
 		}
 	}

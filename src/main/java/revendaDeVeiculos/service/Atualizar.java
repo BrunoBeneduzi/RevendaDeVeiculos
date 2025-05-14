@@ -48,62 +48,78 @@ public class Atualizar {
 	
 	private void alteraTudo() {
 		this.linha();
+		
 		Veiculos atualizarTudo =  this.exibeVeiculosOrdenados.exibirPosicaoDosVeiculos();
-		this.linha();
-		
-		System.out.print("Digite a nova marca -> ");
-		atualizarTudo.setMarca(sc.nextLine());
-		System.out.println("------------------------------------------ NOVA MARCA CADASTRADA ------------------------------------------");
-		
-		System.out.print("Digite o novo modelo -> ");
-		atualizarTudo.setModelo(sc.nextLine());
-		System.out.println("------------------------------------------ NOVO MODELO CADASTRADO' ------------------------------------------");
-		
-		atualizarTudo.setAno(this.verificaData.cadastraAno());
-		System.out.println("------------------------------------------ NOVO ANO CADASTRADO' ------------------------------------------");
-		
-		atualizarTudo.setPreco(this.verificaPreco.cadastraPrecoDeVenda());
-		System.out.println("------------------------------------------ NOVO PREÇO CADASTRADO' ------------------------------------------");
+			if(atualizarTudo != null) {
+				this.linha();
+				
+				System.out.print("Digite a nova marca -> ");
+				atualizarTudo.setMarca(sc.nextLine());
+				System.out.println("------------------------------------------ NOVA MARCA CADASTRADA ------------------------------------------");
+				
+				System.out.print("Digite o novo modelo -> ");
+				atualizarTudo.setModelo(sc.nextLine());
+				System.out.println("------------------------------------------ NOVO MODELO CADASTRADO' ------------------------------------------");
+				
+				atualizarTudo.setAno(this.verificaData.cadastraAno());
+				System.out.println("------------------------------------------ NOVO ANO CADASTRADO' ------------------------------------------");
+				
+				atualizarTudo.setPreco(this.verificaPreco.cadastraPrecoDeVenda());
+				System.out.println("------------------------------------------ NOVO PREÇO CADASTRADO' ------------------------------------------");
+			}
 	}
 	
 	private void alterarMarca() {
 		this.linha();
 		Veiculos atualizarMarca = this.exibeVeiculosOrdenados.exibirPosicaoDosVeiculos();
-		this.linha();
-		System.out.print("Digite a nova marca -> ");
-		atualizarMarca.setMarca(sc.nextLine());
 		
-		System.out.println("------------------------------------------ NOVA MARCA CADASTRADA ------------------------------------------");
+			if(atualizarMarca != null) {
+				this.linha();
+				System.out.print("Digite a nova marca -> ");
+				atualizarMarca.setMarca(sc.nextLine());
+				System.out.println("------------------------------------------ NOVA MARCA CADASTRADA ------------------------------------------");
+			}
+				
 	}
 	
 	private void alterarModelo() {
 		this.linha();
 		Veiculos atualizarModelo = this.exibeVeiculosOrdenados.exibirPosicaoDosVeiculos();
-		this.linha();
-		System.out.print("Digite o novo modelo -> ");
-		atualizarModelo.setModelo(sc.nextLine());
 		
-		
-		System.out.println("------------------------------------------ NOVO MODELO CADASTRADO' ------------------------------------------");
+			if(atualizarModelo != null) {
+				this.linha();
+				System.out.print("Digite o novo modelo -> ");
+				atualizarModelo.setModelo(sc.nextLine());
+				
+				System.out.println("------------------------------------------ NOVO MODELO CADASTRADO' ------------------------------------------");
+			}
+	
 	}
 	
 	private void alterarAno() {
 		this.linha();
 		Veiculos atualizaAno = this.exibeVeiculosOrdenados.exibirPosicaoDosVeiculos();
-		this.linha();
-		atualizaAno.setAno(this.verificaData.cadastraAno());
+			
+			if(atualizaAno != null) {
+				this.linha();
+				atualizaAno.setAno(this.verificaData.cadastraAno());
+				
+				System.out.println("------------------------------------------ NOVO ANO CADASTRADO' ------------------------------------------");
+			}
 		
-		System.out.println("------------------------------------------ NOVO ANO CADASTRADO' ------------------------------------------");
 		
 	}
 	
 	private void alterarPreco() {
 		this.linha();
 		Veiculos atualizaPreco = this.exibeVeiculosOrdenados.exibirPosicaoDosVeiculos();
-		this.linha();
-		atualizaPreco.setPreco(this.verificaPreco.cadastraPrecoDeVenda());
 		
-		System.out.println("------------------------------------------ NOVO PREÇO CADASTRADO' ------------------------------------------");
+			if(atualizaPreco != null) {
+				this.linha();
+				atualizaPreco.setPreco(this.verificaPreco.cadastraPrecoDeVenda());
+				
+				System.out.println("------------------------------------------ NOVO PREÇO CADASTRADO' ------------------------------------------");
+			}
 		
 	}
 	
