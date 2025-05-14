@@ -6,7 +6,7 @@ import java.util.List;
 import revendaDeVeiculos.model.Veiculos;
 
 public class ListaDeVeiculos {
-	private static List<Veiculos> veiculos = new ArrayList<>();
+	private static List<Veiculos> veiculos = new ArrayList<>();//usado para guardar os veiculos de modo temporario
 
 	
 	public List<Veiculos> getVeiculos() {
