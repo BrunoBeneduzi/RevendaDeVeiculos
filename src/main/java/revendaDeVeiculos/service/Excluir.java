@@ -9,11 +9,14 @@ public class Excluir {
 	
 	
 	public void excluirVeiculo() {
+	
 		Veiculos excluirVeiculo = this.exivExibeVeiculosOrdenados.exibirPosicaoDosVeiculos();
 		
-		this.listaDeVeiculos.getVeiculos().remove(excluirVeiculo);
+		if(excluirVeiculo != null) {
+			this.listaDeVeiculos.getVeiculos().remove(excluirVeiculo);
+			System.out.println("-------------------Veiculo Excluido com sucesso-------------------");
+		}
 		
-		System.out.println("-------------------Veiculo Excluido com sucesso-------------------");
 	}
 	
 }
