@@ -12,8 +12,6 @@ public class VerificaPreco {
 		BigDecimal numeroBigDecimal = BigDecimal.ZERO;
 		
 		
-		System.out.print("Digite o preço do Veiculo -> ");
-		
 		do {
 			try {
 				System.out.print("Digite o preço do Veiculo -> ");

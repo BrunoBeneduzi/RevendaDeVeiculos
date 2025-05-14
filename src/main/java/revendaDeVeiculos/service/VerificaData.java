@@ -12,13 +12,14 @@ public class VerificaData {
 		
 		try {
 			ano = sc.nextInt();
+			sc.nextLine();
 		}catch(InputMismatchException e) {
 			sc.nextLine();
 			System.out.println("------------------- Numero invalido, foi adicionado o ano de 2025 por ser o ano mais recente ------------------- ");
 			return 2025;
 		}
 			
-		sc.nextLine();
+		
 		if(ano >= 1885 && ano <= 2025) {
 			return ano;
 		}else {
