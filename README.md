@@ -40,4 +40,4 @@ Repositórios públicos estão disponíveis para qualquer pessoa acessar. Para c
    ```bash
    cd caminho/para/pasta
    ```
-   🧩 Rode o comando para clonar: git clone https://github.com/BrunoBeneduzi/Imobiliaria.git
+   🧩 Rode o comando para clonar: git clone https://github.com/BrunoBeneduzi/RevendaDeVeiculos.git
