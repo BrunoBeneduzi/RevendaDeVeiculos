@@ -48,6 +48,7 @@ public class RevendaMenu {
 				System.out.println("Numero invalido");
 				this.linha();
 			}
+			escolha = 0;
 		}while(escolha != 5);
 		System.out.println("Programa encerrado");
 	}

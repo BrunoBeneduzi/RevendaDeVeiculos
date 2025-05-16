@@ -20,12 +20,12 @@ public class VerificaData {
 		}
 			
 		
-		if(ano >= 1885 && ano <= 2025) {
-			return ano;
-		}else {
-			System.out.println("----------------DATA INVALIDA ---------------- Foi adiconado a data de 2025 por ser a mais atual ---------------- ");
-			return 2025;
-		}
+			if(ano >= 1885 && ano <= 2025) {
+				return ano;
+			}else {
+				System.out.println("----------------DATA INVALIDA ---------------- Foi adiconado a data de 2025 por ser a mais atual ---------------- ");
+				return 2025;
+			}
 	}
 	
 }
