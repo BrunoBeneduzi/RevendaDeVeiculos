@@ -31,7 +31,7 @@ Todas essas informações podem ser **editadas a qualquer momento**.
 
 ## 🔓 Clonar um Repositório Público
 
-Repositórios públicos estão disponíveis para qualquer pessoa acessar. Para clonar um repositório público, siga os passos:
+Passos para clonar o codigo:
 
 1. 💾 Tenha o **Git** instalado em sua máquina. [👉 Baixe aqui](https://git-scm.com/downloads)
 2. 📋 Copie a **URL do repositório** (exemplo: `https://github.com/usuario/repositorio.git`)
